@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/underline">
+
+
+    <ImageView
+        android:id="@+id/iconItem"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sampleone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="60dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+
+        >
+
+        <TextView
+            android:id="@+id/textItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="0dp"
+            android:ellipsize="end"
+            android:hint="Title"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/textItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:hint="addr"
+            android:padding="4dp"
+            android:textColor="#9A9595"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/textItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="60dp"
+            android:hint="price"
+            android:padding="4dp"
+            android:textColor="#222121"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textWon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:padding="4dp"
+            android:text="원"
+            android:textColor="#222121"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textItem3"
+            app:layout_constraintStart_toEndOf="@+id/textItem3"
+            app:layout_constraintTop_toTopOf="@+id/textItem3" />
+
+        <ImageView
+            android:id="@+id/iconItem2"
+            android:layout_width="23dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/rerere"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <TextView
+                android:id="@+id/textItem4"
+                android:layout_width="22dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="4dp"
+                android:gravity=""
+                android:hint="16"
+                android:textColor="#9A9595"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iconItem3"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        <TextView
+            android:id="@+id/textItem5"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="4dp"
+            android:gravity=""
+            android:hint="25"
+            android:textColor="#9A9595"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
